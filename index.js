@@ -1,5 +1,5 @@
-const Transaction = require("./models/Transaction");
-const Blockchain = require("./models/Blockchain");
+const Transaction = require("./src/models/Transaction");
+const Blockchain = require("./src/models/Blockchain");
 const myWallet = require("./wallet.json");
 const EC = require('elliptic').ec;
 const ec = new EC('secp256k1');
@@ -22,7 +22,7 @@ console.log(simpleCurrency.isChainValid())
 console.log("alibenmussa", simpleCurrency.getBalanceOfAddress(myWalletAddress))
 console.log("osama", simpleCurrency.getBalanceOfAddress(osamaKey))
 
-simpleCurrency.chain[1].transactions[0].amount = 98765;
+simpleCurrency.chain[1].transactions[0].amount = 5000;
 console.log(JSON.stringify(simpleCurrency.chain, null, 2));
 console.log(simpleCurrency.isChainValid())
 

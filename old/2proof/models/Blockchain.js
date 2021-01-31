@@ -27,7 +27,7 @@ class Blockchain {
 
         block.previousHash = this.getLatestBlock().hash;
         // block.hash = block.calcHash()
-        block.mineBlock(4);
+        block.mineBlock(6);
         this.chain.push(block)
 
         // this.salt = this.selectRandom();

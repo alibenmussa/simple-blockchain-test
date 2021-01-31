@@ -4,11 +4,11 @@ const Blockchain = require("./models/blockchain");
 const simpleCurrency = new Blockchain();
 simpleCurrency.createNewBlock(new Block(1, new Date(), { amount: 5 }))
 console.log(JSON.stringify(simpleCurrency.chain, null, 2));
-setTimeout(() => {
+// setTimeout(() => {
     simpleCurrency.createNewBlock(new Block(2, new Date(), { amount: 1 }))
     console.log(JSON.stringify(simpleCurrency.chain, null, 2));
     console.log(simpleCurrency.isChainValid())
-}, 5000)
+// }, 5000)
 
 // simpleCurrency.chain[1].data.amount = 1000;
 // simpleCurrency.chain[1].hash = simpleCurrency.chain[1].calcHash()

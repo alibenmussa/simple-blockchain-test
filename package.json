@@ -12,7 +12,8 @@
     "start": "nodemon index",
     "block": "node ./old/1block/index",
     "proof": "node ./old/2proof/index",
-    "transactions": "node ./old/2transactions/index",
+    "transactions": "node ./old/3transactions/index",
+    "signature": "node ./old/4signature/index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ali Ben Mussa",

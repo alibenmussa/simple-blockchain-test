@@ -10,8 +10,8 @@ console.log(simpleCurrency.isChainValid())
 
 simpleCurrency.chain[1].data.amount = 1000;
 simpleCurrency.chain[1].hash = simpleCurrency.chain[1].calcHash()
-simpleCurrency.chain[2].previousHash = simpleCurrency.chain[1].hash
-simpleCurrency.chain[2].hash = simpleCurrency.chain[2].calcHash()
+// simpleCurrency.chain[2].previousHash = simpleCurrency.chain[1].hash
+// simpleCurrency.chain[2].hash = simpleCurrency.chain[2].calcHash()
 console.log(JSON.stringify(simpleCurrency.chain, null, 2));
 
 console.log(simpleCurrency.isChainValid())
